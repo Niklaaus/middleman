@@ -92,7 +92,6 @@ public class MidManServlet extends HttpServlet {
 			StringWriter writer = new StringWriter();
 			IOUtils.copy(readFromRemoteServer, writer);
 			String theString = writer.toString();
-			System.out.println("hiiii reached here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 			request.setAttribute("responseBody", theString);
 
 			instream.close();
